@@ -53,22 +53,22 @@
             <Label layoutX="35.0" layoutY="362.0" text="Settings" />
             <ImageView fitHeight="17.0" fitWidth="23.0" layoutX="6.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../HCI/images.jpg" />
+                  <Image url="@Images/images.jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="622.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../HCI/download%20(1).png" />
+                  <Image url="@Images/download%20(1).png" />
                </image>
             </ImageView>
             <ImageView fitHeight="10.0" fitWidth="16.0" layoutX="605.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../HCI/download%20(2).png" />
+                  <Image url="@Images/download%20(2).png" />
                </image>
             </ImageView>
             <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="553.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../Pictures/1601825842615.jpg" />
+                  <Image url="@Images/1601825842615.jpg" />
                </image>
             </ImageView>
             <Label layoutX="201.0" layoutY="129.0" text="No:of Orders" />
@@ -80,7 +80,7 @@
             <Button layoutX="264.0" layoutY="426.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="111.0" text="New Order" />
             <ImageView fitHeight="44.0" fitWidth="75.0" layoutX="395.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../HCI/add.jpg" />
+                  <Image url="@Images/add.jpg" />
                </image>
             </ImageView>
          </children>
