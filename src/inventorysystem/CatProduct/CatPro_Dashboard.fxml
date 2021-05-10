@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="BorderPane" prefHeight="600.0" prefWidth="1024.0" styleClass="parent" stylesheets="@CatProCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorysystem.CatProduct.CatProDashboardController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="45.0" styleClass="sidebar" stylesheets="@CatProCascadeStyleSheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIcon glyphName="BARS" layoutX="15.0" layoutY="27.0" size="1.5em" AnchorPane.leftAnchor="14.5" AnchorPane.rightAnchor="14.5" AnchorPane.topAnchor="15.0" />
+            <VBox layoutX="15.0" layoutY="266.0">
+               <children>
+                  <FontAwesomeIcon glyphName="" size="1.5em" text="" />
+                  <FontAwesomeIcon glyphName="BARS" size="1.5em" />
+                  <FontAwesomeIcon glyphName="BARS" size="1.5em" />
+               </children>
+            </VBox>
+         </children></AnchorPane>
+   </left>
+</BorderPane>
