@@ -26,10 +26,10 @@ and open the template in the editor.
     -fx-background-color: rgba(0,0,0,0);
 }
 .search-button{
-    -fx-background-color: #FAD7A0;
+    -fx-background-color: #F5B041;
     -fx-background-radius: 30;
 }
 
 .background1{
-    -fx-background-color: #D6EAF8;
+    -fx-background-color: #FDEBD0;
 }

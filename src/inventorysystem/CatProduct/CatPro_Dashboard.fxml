@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import de.jensd.fx.glyphs.fontawesome.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,9 +9,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane id="BorderPane" prefHeight="600.0" prefWidth="1024.0" styleClass="parent" stylesheets="@CatProCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorysystem.CatProduct.CatProDashboardController">
+<BorderPane id="BorderPane" prefHeight="900.0" prefWidth="1600.0" styleClass="parent" stylesheets="@CatProCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorysystem.CatProduct.CatProDashboardController">
    <left>
-      <AnchorPane prefHeight="200.0" prefWidth="45.0" styleClass="sidebar" stylesheets="@CatProCascadeStyleSheet.css" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="900.0" prefWidth="62.0" styleClass="sidebar" stylesheets="@CatProCascadeStyleSheet.css" BorderPane.alignment="CENTER">
          <children>
             <FontAwesomeIcon glyphName="BARS" layoutX="15.0" layoutY="27.0" size="1.5em" AnchorPane.leftAnchor="14.5" AnchorPane.rightAnchor="14.5" AnchorPane.topAnchor="15.0" />
             <VBox layoutX="15.0" layoutY="266.0">
@@ -21,4 +23,42 @@
             </VBox>
          </children></AnchorPane>
    </left>
+   <right>
+      <VBox prefHeight="900.0" prefWidth="413.0" styleClass="background1" stylesheets="@CatProCascadeStyleSheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="90.0" prefWidth="413.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="42.0" prefWidth="294.0" text="Catogory Details ">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="53.0" prefWidth="369.0" styleClass="search" stylesheets="@CatProCascadeStyleSheet.css">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+               <children>
+                  <TextField prefHeight="34.0" prefWidth="253.0" promptText="Type here to search" styleClass="transparent" stylesheets="@CatProCascadeStyleSheet.css">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="86.0" stylesheets="@CatProCascadeStyleSheet.css" text="Search">
+                     <styleClass>
+                        <String fx:value="search" />
+                        <String fx:value="search-button" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
 </BorderPane>
