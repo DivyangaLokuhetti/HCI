@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import de.jensd.fx.glyphs.fontawesome.*?>
@@ -58,7 +60,45 @@
                   </Button>
                </children>
             </HBox>
+            <VBox alignment="CENTER" prefHeight="555.0" prefWidth="150.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <children>
+                  <HBox prefHeight="75.0" prefWidth="313.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="74.0" prefWidth="174.0" text="Laptops" textFill="#a11414">
+                           <font>
+                              <Font name="Candara" size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="75.0" prefWidth="152.0" text="1540 Pieces " textFill="#a11414">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <ImageView fitHeight="163.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/pngfind.com-laptop-png-604316.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
          </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
       </VBox>
    </right>
 </BorderPane>
