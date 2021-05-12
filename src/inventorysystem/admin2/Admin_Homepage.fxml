@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox alignment="CENTER" prefHeight="700.0" prefWidth="253.0" style="-fx-background-color: #241E4E; -fx-border-color: #ff9e00;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="230.0" style="-fx-background-color: #241E4E; -fx-border-radius: 30; -fx-border-color: #ff9e00; -fx-border-width: 5;" text="Dashboard" textFill="#ff9e00">
+               <font>
+                  <Font name="FontAwesome Regular" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="230.0" style="-fx-background-color: #241E4E; -fx-border-radius: 30; -fx-border-color: ff9e00; -fx-border-width: 5;" text="Customer" textFill="#ff9e00">
+               <font>
+                  <Font name="FontAwesome Regular" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="230.0" style="-fx-background-color: #241E4E; -fx-border-radius: 30; -fx-border-color: ff9e00; -fx-border-width: 5;" text="Order" textFill="#ff9e00">
+               <font>
+                  <Font name="FontAwesome Regular" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="230.0" style="-fx-background-color: #241E4E; -fx-border-radius: 30; -fx-border-color: #ff9e00; -fx-border-width: 5;" text="Product" textFill="#ff9e00">
+               <font>
+                  <Font name="FontAwesome Regular" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="230.0" style="-fx-background-color: #241E4E; -fx-border-radius: 30; -fx-border-color: #ff9e00; -fx-border-width: 5;" text="Settings" textFill="#ff9e00">
+               <font>
+                  <Font name="FontAwesome Regular" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" style="-fx-background-color: #; -fx-border-color: #ff9e00;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" style="-fx-background-color: #c2aff0; -fx-border-color: #240046; -fx-border-width: 2;" text="HOMEPAGE" textAlignment="CENTER">
+               <font>
+                  <Font name="Algerian" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER" spacing="40.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onClickHomePageDashBoard">
+                     <graphic>
+                        <VBox alignment="CENTER" prefHeight="250.0" prefWidth="300.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                           <children>
+                              <FontAwesomeIconView glyphName="HOME" size="100" wrappingWidth="94.42857360839844" />
+                              <Label text="Dashboard">
+                                 <font>
+                                    <Font name="Eras Demi ITC" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onClickHomePageCustomer">
+                     <graphic>
+                        <VBox alignment="CENTER" prefHeight="250.0" prefWidth="300.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                           <children>
+                              <FontAwesomeIconView glyphName="USER_PLUS" size="100" wrappingWidth="116.42857360839844" />
+                              <Label text="Add customer">
+                                 <font>
+                                    <Font name="Eras Demi ITC" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onClickHomePageDashAddProduct">
+                     <graphic>
+                        <VBox alignment="CENTER" prefHeight="250.0" prefWidth="300.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                           <children>
+                              <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="100" wrappingWidth="87.42857360839844" />
+                              <Label text="Add Product">
+                                 <font>
+                                    <Font name="Eras Demi ITC" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="40.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onClickHomePagePlaceOrder">
+                     <graphic>
+                        <VBox alignment="CENTER" prefHeight="250.0" prefWidth="300.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="112.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/order.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Place Order">
+                                 <font>
+                                    <Font name="Eras Demi ITC" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onClickHomePageViewProducts">
+                     <graphic>
+                        <VBox alignment="CENTER" prefHeight="250.0" prefWidth="300.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                           <children>
+                              <FontAwesomeIconView glyphName="USERS" size="100" wrappingWidth="108.42857360839844" />
+                              <Label text="View Products">
+                                 <font>
+                                    <Font name="Eras Demi ITC" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onClickHomePageManageUsers">
+                     <graphic>
+                        <VBox alignment="CENTER" prefHeight="250.0" prefWidth="300.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/manage%20users.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label text="Manage Users">
+                                 <font>
+                                    <Font name="Eras Demi ITC" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <GridPane alignment="CENTER" prefHeight="125.0" style="-fx-background-color: #F18805; -fx-border-color: #ff9e00;" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="MY STORE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Algerian" size="48.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="15.0" />
+               </GridPane.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" prefHeight="38.0" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#a31621" glyphName="POWER_OFF" size="40.0" />
+                  <Label alignment="BOTTOM_LEFT" prefHeight="42.0" prefWidth="156.0" text="Logout" textFill="#a31621">
+                     <font>
+                        <Font name="Eras Bold ITC" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" prefHeight="90.0" prefWidth="308.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/1601825842615.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" text="kush.jayz">
+                     <font>
+                        <Font name="Eras Bold ITC" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <FontAwesomeIconView glyphName="CARET_DOWN" size="60" wrappingWidth="27.285714149475098">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView glyphName="COG" size="50">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+      </GridPane>
+   </top>
+</BorderPane>
