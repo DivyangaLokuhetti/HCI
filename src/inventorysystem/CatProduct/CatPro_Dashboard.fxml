@@ -63,7 +63,7 @@
                   </Button>
                </children>
             </HBox>
-            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="150.0" styleClass="Cat_background1" stylesheets="@CatProCascadeStyleSheet.css">
+            <VBox fx:id="clikedCategory" alignment="CENTER" prefHeight="600.0" prefWidth="150.0" styleClass="Cat_background1" stylesheets="@CatProCascadeStyleSheet.css">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -73,7 +73,7 @@
                <children>
                   <HBox prefHeight="75.0" prefWidth="313.0" stylesheets="@CatProCascadeStyleSheet.css">
                      <children>
-                        <Label alignment="CENTER" prefHeight="74.0" prefWidth="317.0" text="Laptops" textFill="#a11414">
+                        <Label fx:id="clickedCatName" alignment="CENTER" prefHeight="74.0" prefWidth="317.0" text="Laptops" textFill="#a11414">
                            <font>
                               <Font name="Candara" size="36.0" />
                            </font>
@@ -86,7 +86,7 @@
                         <Insets top="15.0" />
                      </VBox.margin>
                   </HBox>
-                  <ImageView fitHeight="163.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="clickedCatIamge" fitHeight="163.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Images/pngfind.com-laptop-png-604316.png" />
                      </image>
@@ -190,14 +190,17 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                <children>
-                  <ScrollPane prefHeight="659.0" prefWidth="1014.0">
+                  <ScrollPane fx:id="scrol" prefHeight="659.0" prefWidth="1014.0" styleClass="transparent" stylesheets="@CatProCascadeStyleSheet.css">
                      <content>
-                        <GridPane prefHeight="0.0" prefWidth="3.0">
-                          <columnConstraints>
-                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                          </columnConstraints>
+                        <GridPane fx:id="grid" prefHeight="8.0" prefWidth="23.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           </rowConstraints>
                         </GridPane>
                      </content>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
                   </ScrollPane>
                </children>
             </HBox>
