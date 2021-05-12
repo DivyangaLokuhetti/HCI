@@ -143,7 +143,7 @@
                   <Button mnemonicParsing="false" text="Add This product" />
                </children>
             </VBox>
-            <VBox layoutX="981.0" layoutY="90.0" prefHeight="695.0" prefWidth="551.0" styleClass="view-product" stylesheets="@orderdetailssummary.css">
+            <VBox layoutX="981.0" layoutY="90.0" prefHeight="717.0" prefWidth="551.0" styleClass="view-product" stylesheets="@orderdetailssummary.css">
                <children>
                   <HBox prefHeight="62.0" prefWidth="551.0">
                      <children>
