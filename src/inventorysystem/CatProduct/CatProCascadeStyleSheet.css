@@ -33,3 +33,15 @@ and open the template in the editor.
 .background1{
     -fx-background-color: #FDEBD0;
 }
+.viewAllPro_button{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 30;
+}
+.Cat_background1{
+    -fx-background-color: #FB6F36;
+    -fx-background-radius: 30;
+}
+.three_button{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 100;
+}
