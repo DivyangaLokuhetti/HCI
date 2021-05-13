@@ -41,12 +41,12 @@
                               <Insets left="20.0" />
                            </opaqueInsets>
                            <HBox.margin>
-                              <Insets left="20.0" />
+                              <Insets left="20.0" top="5.0" />
                            </HBox.margin>
                         </ComboBox>
                         <Label prefHeight="38.0" prefWidth="93.0" text="Price range">
                            <HBox.margin>
-                              <Insets left="20.0" />
+                              <Insets left="50.0" />
                            </HBox.margin>
                         </Label>
                         <TextField prefHeight="34.0" prefWidth="121.0" promptText="Min" styleClass="transparent" stylesheets="@../CatProduct/CatProCascadeStyleSheet.css">
@@ -70,12 +70,18 @@
                               <String fx:value="search" />
                               <String fx:value="search-button" />
                            </styleClass>
+                           <HBox.margin>
+                              <Insets left="130.0" top="5.0" />
+                           </HBox.margin>
                         </Button>
                      </children>
                   </HBox>
-                  <HBox prefHeight="59.0" prefWidth="894.0">
+                  <HBox prefHeight="44.0" prefWidth="928.0">
                      <children>
-                        <Label prefHeight="32.0" prefWidth="132.0" text="Products Count" />
+                        <Label prefHeight="32.0" prefWidth="132.0" text="Products Count">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin></Label>
                         <Label prefHeight="32.0" prefWidth="54.0" text="10" textFill="#1316d7">
                            <font>
                               <Font size="22.0" />
@@ -88,8 +94,11 @@
                            <padding>
                               <Insets left="20.0" right="20.0" />
                            </padding>
+                           <HBox.margin>
+                              <Insets left="345.0" />
+                           </HBox.margin>
                         </TextField>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="109.0" stylesheets="@../CatProduct/CatProCascadeStyleSheet.css" text="Search">
+                        <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="96.0" stylesheets="@../CatProduct/CatProCascadeStyleSheet.css" text="Search">
                            <styleClass>
                               <String fx:value="search" />
                               <String fx:value="search-button" />
@@ -139,14 +148,18 @@
                   <VBox prefHeight="469.0" prefWidth="915.0" style="-fx-background-color: #FFFFFF;">
                      <children>
                         <HBox prefHeight="70.0" prefWidth="873.0" />
-                        <Label text="Label" />
-                        <TextField />
-                        <ComboBox prefWidth="150.0" />
                      </children>
                   </VBox>
                   <HBox prefHeight="64.0" prefWidth="928.0">
                      <children>
-                        <Button mnemonicParsing="false" text="Add This product" />
+                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="121.0" styleClass="add" text="Add This product">
+                           <HBox.margin>
+                              <Insets left="800.0" top="10.0" />
+                           </HBox.margin>
+                           <stylesheets>
+                              <URL value="@orderdetailssummary.css" />
+                              <URL value="@orderdetailssummary.css" />
+                           </stylesheets></Button>
                      </children>
                   </HBox>
                </children>
@@ -157,7 +170,7 @@
                      <children>
                         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="204.0" text="Product Details">
                            <HBox.margin>
-                              <Insets left="15.0" />
+                              <Insets left="3.0" />
                            </HBox.margin>
                            <font>
                               <Font name="Hiragino Sans CNS W3" size="24.0" />
@@ -358,7 +371,7 @@
                               <Insets left="20.0" />
                            </HBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="56.0" prefWidth="67.0" styleClass="delete-button" stylesheets="@orderdetailssummary.css">
+                        <Button mnemonicParsing="false" prefHeight="56.0" prefWidth="67.0" styleClass="next" stylesheets="@orderdetailssummary.css">
                            <graphic>
                               <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -378,7 +391,7 @@
                               <Insets right="20.0" />
                            </HBox.margin>
                         </Label>
-                        <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="62.0" styleClass="delete-button" stylesheets="@orderdetailssummary.css">
+                        <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="62.0" styleClass="next" stylesheets="@orderdetailssummary.css">
                            <graphic>
                               <ImageView fitHeight="44.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -403,6 +416,7 @@
                   </Label>
                </children>
             </VBox>
+            <Button layoutX="1347.0" layoutY="821.0" mnemonicParsing="false" onAction="#nextButton" prefHeight="59.0" prefWidth="178.0" text="Next" />
          </children>
       </AnchorPane>
    </center>

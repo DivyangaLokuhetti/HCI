@@ -26,45 +26,15 @@
                <children>
                   <HBox prefHeight="48.0" prefWidth="823.0">
                      <children>
-                        <Label prefHeight="32.0" prefWidth="54.0" text="Sort By">
+                        <Label prefHeight="32.0" prefWidth="157.0" text="Sort By Added Date">
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
                         </Label>
-                        <Label prefHeight="32.0" prefWidth="54.0" text="Category">
-                           <HBox.margin>
-                              <Insets left="20.0" />
-                           </HBox.margin>
-                        </Label>
-                        <ComboBox prefHeight="30.0" prefWidth="128.0">
-                           <opaqueInsets>
-                              <Insets left="20.0" />
-                           </opaqueInsets>
-                           <HBox.margin>
-                              <Insets left="20.0" />
-                           </HBox.margin>
-                        </ComboBox>
-                        <Label prefHeight="38.0" prefWidth="93.0" text="Price range">
-                           <HBox.margin>
-                              <Insets left="20.0" />
-                           </HBox.margin>
-                        </Label>
-                        <TextField prefHeight="34.0" prefWidth="121.0" promptText="Min" styleClass="transparent" stylesheets="@../CatProduct/CatProCascadeStyleSheet.css">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                           <padding>
-                              <Insets right="20.0" />
-                           </padding>
-                        </TextField>
-                        <TextField prefHeight="36.0" prefWidth="121.0" promptText="Max" styleClass="transparent" stylesheets="@../CatProduct/CatProCascadeStyleSheet.css">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                           <padding>
-                              <Insets right="20.0" />
-                           </padding>
-                        </TextField>
+                        <RadioButton mnemonicParsing="false" text="Last year" />
+                        <RadioButton mnemonicParsing="false" text="Last 6month" />
+                        <RadioButton mnemonicParsing="false" text="Last month" />
+                        <RadioButton mnemonicParsing="false" text="Last week" />
                         <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" stylesheets="@../CatProduct/CatProCascadeStyleSheet.css" text="Filter">
                            <styleClass>
                               <String fx:value="search" />
@@ -75,13 +45,13 @@
                   </HBox>
                   <HBox prefHeight="59.0" prefWidth="894.0">
                      <children>
-                        <Label prefHeight="32.0" prefWidth="132.0" text="Products Count" />
+                        <Label prefHeight="32.0" prefWidth="132.0" text="Customer Count" />
                         <Label prefHeight="32.0" prefWidth="54.0" text="10" textFill="#1316d7">
                            <font>
                               <Font size="22.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="34.0" prefWidth="253.0" promptText="Search product or category" styleClass="transparent" stylesheets="@../CatProduct/CatProCascadeStyleSheet.css">
+                        <TextField prefHeight="34.0" prefWidth="253.0" promptText="Search  Customer" styleClass="transparent" stylesheets="@../CatProduct/CatProCascadeStyleSheet.css">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -139,14 +109,11 @@
                   <VBox prefHeight="469.0" prefWidth="915.0" style="-fx-background-color: #FFFFFF;">
                      <children>
                         <HBox prefHeight="70.0" prefWidth="873.0" />
-                        <Label text="Label" />
-                        <TextField />
-                        <ComboBox prefWidth="150.0" />
                      </children>
                   </VBox>
                   <HBox prefHeight="64.0" prefWidth="928.0">
                      <children>
-                        <Button mnemonicParsing="false" text="Add This product" />
+                        <Button mnemonicParsing="false" text="Add This Customer" />
                      </children>
                   </HBox>
                </children>
@@ -155,7 +122,7 @@
                <children>
                   <HBox prefHeight="62.0" prefWidth="551.0">
                      <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="204.0" text="Product Details">
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="249.0" text="Customer Details">
                            <HBox.margin>
                               <Insets left="15.0" />
                            </HBox.margin>
@@ -163,26 +130,6 @@
                               <Font name="Hiragino Sans CNS W3" size="24.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="40.0" prefWidth="160.0" promptText="Search product" styleClass="transparent" stylesheets="@../CatProduct/CatProCascadeStyleSheet.css">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                           <padding>
-                              <Insets left="20.0" right="20.0" />
-                           </padding>
-                           <HBox.margin>
-                              <Insets left="60.0" top="10.0" />
-                           </HBox.margin>
-                        </TextField>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="109.0" stylesheets="@../CatProduct/CatProCascadeStyleSheet.css" text="Search">
-                           <styleClass>
-                              <String fx:value="search" />
-                              <String fx:value="search-button" />
-                           </styleClass>
-                           <HBox.margin>
-                              <Insets top="10.0" />
-                           </HBox.margin>
-                        </Button>
                      </children>
                   </HBox>
                   <HBox prefHeight="40.0" prefWidth="533.0" />

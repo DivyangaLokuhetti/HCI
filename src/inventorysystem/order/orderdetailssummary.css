@@ -36,7 +36,7 @@
 }
 
 .delete-button{
-    -fx-background-color: #FF0000;
+    -fx-background-color: #F70D1A;
     -fx-background-radius: 30;
 }
 
@@ -50,4 +50,16 @@
     -fx-border-color: #C1C1C1;
     -fx-background-radius: 0px 0px 30px 30px;
     -fx-border-radius: 0px 0px 30px 30px;
+    
+}
+
+
+
+.add{
+    -fx-background-color: #6AFB92;
+    -fx-background-radius: 30;
+}
+.next{
+    -fx-background-color: #FFDB58;
+    -fx-background-radius: 30;
 }
