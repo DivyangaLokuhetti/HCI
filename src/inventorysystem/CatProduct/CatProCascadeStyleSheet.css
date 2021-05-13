@@ -45,3 +45,23 @@ and open the template in the editor.
     -fx-background-color: #ffffff;
     -fx-background-radius: 100;
 }
+.mainButton1{
+    -fx-background-color: #ffbc79;
+     -fx-background-radius: 30;
+
+}
+.mainButton2{
+    -fx-background-color: #ff9079;
+     -fx-background-radius: 30;
+
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+.addCAT{
+    -fx-background-color: #fa5e5e;
+     -fx-background-radius: 30;
+}
+.CATlabel{
+    -fx-background-color: #f8bf1f;
+}
