@@ -392,10 +392,13 @@
             </VBox>
             <VBox layoutX="29.0" prefHeight="71.0" prefWidth="1481.0" styleClass="header" stylesheets="@../../../../Test/src/inventorysystem/order/orderdetailssummary.css">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="73.0" prefWidth="269.0" text="Label">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="73.0" prefWidth="269.0" text="Label" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="600.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="Cambria" size="38.0" />
+                     </font>
                   </Label>
                </children>
             </VBox>

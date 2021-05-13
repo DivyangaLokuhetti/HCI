@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.geometry.*?>
@@ -125,24 +126,40 @@
                      <children>
                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="110.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="58.0" styleClass="three_button" stylesheets="@CatProCascadeStyleSheet.css" />
+                              <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="58.0" stylesheets="@CatProCascadeStyleSheet.css">
+                                 <styleClass>
+                                    <String fx:value="three_button" />
+                                    <String fx:value="shadow" />
+                                 </styleClass></Button>
                            </children>
                         </VBox>
                         <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="110.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="58.0" styleClass="three_button" stylesheets="@CatProCascadeStyleSheet.css" />
+                              <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="58.0" stylesheets="@CatProCascadeStyleSheet.css">
+                                 <styleClass>
+                                    <String fx:value="three_button" />
+                                    <String fx:value="shadow" />
+                                 </styleClass></Button>
                            </children>
                         </VBox>
                         <VBox alignment="CENTER" layoutX="120.0" layoutY="10.0" prefHeight="200.0" prefWidth="110.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="58.0" styleClass="three_button" stylesheets="@CatProCascadeStyleSheet.css" />
+                              <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="58.0" stylesheets="@CatProCascadeStyleSheet.css">
+                                 <styleClass>
+                                    <String fx:value="three_button" />
+                                    <String fx:value="shadow" />
+                                 </styleClass></Button>
                            </children>
                         </VBox>
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" layoutX="10.0" layoutY="413.0" prefHeight="72.0" prefWidth="313.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" styleClass="viewAllPro_button" stylesheets="@CatProCascadeStyleSheet.css" text="View All Products" />
+                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="149.0" stylesheets="@CatProCascadeStyleSheet.css" text="View All Products">
+                           <styleClass>
+                              <String fx:value="viewAllPro_button" />
+                              <String fx:value="shadow" />
+                           </styleClass></Button>
                      </children>
                      <VBox.margin>
                         <Insets top="20.0" />
@@ -159,22 +176,93 @@
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox prefHeight="73.0" prefWidth="1125.0">
+            <HBox prefHeight="86.0" prefWidth="1066.0" styleClass="header" stylesheets="@../order/orderdetailssummary.css">
                <children>
-                  <Label prefHeight="87.0" prefWidth="838.0" text="Category  / Product Management Dashboard" />
-                  <Label layoutX="10.0" layoutY="10.0" prefHeight="84.0" prefWidth="296.0" text="My Acccount" />
+                  <Label prefHeight="87.0" prefWidth="838.0" stylesheets="@../order/orderdetailssummary.css" text="CATEGORY / PRODUCT MANAGEMENT DASHBOARD" textFill="#f8f8f8">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Cambria" size="29.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="84.0" prefWidth="296.0" text="My Account" textFill="WHITE" underline="true">
+                     <HBox.margin>
+                        <Insets left="100.0" right="20.0" />
+                     </HBox.margin></Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="121.0" prefWidth="946.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="80.0" right="80.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="553.0" stylesheets="@CatProCascadeStyleSheet.css" text="View Categories ">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="mainButton1" />
+                     </styleClass>
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="transparent" stylesheets="@CatProCascadeStyleSheet.css" />
+                  <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="553.0" stylesheets="@CatProCascadeStyleSheet.css" text="View All Products">
+                     <styleClass>
+                        <String fx:value="mainButton2" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <font>
+                        <Font name="Cambria Math" size="30.0" />
+                     </font>
+                  </Button>
                </children>
             </HBox>
-            <HBox prefHeight="89.0" prefWidth="1125.0">
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="1106.0">
                <children>
-                  <Label prefHeight="89.0" prefWidth="333.0" text="category managemnt buttons or something" />
-                  <Label layoutX="10.0" layoutY="10.0" prefHeight="96.0" prefWidth="167.0" text="Product Managemnt" />
+                  <Separator prefHeight="12.0" prefWidth="789.0" />
                </children>
             </HBox>
-            <HBox prefHeight="79.0" prefWidth="1125.0">
+            <HBox prefHeight="64.0" prefWidth="1106.0">
                <children>
-                  <Label prefHeight="77.0" prefWidth="209.0" text="Category managemnt title" />
-                  <Label layoutX="10.0" layoutY="10.0" prefHeight="77.0" prefWidth="209.0" text="Add Category" />
+                  <Label alignment="CENTER" prefHeight="77.0" prefWidth="1139.0" stylesheets="@CatProCascadeStyleSheet.css" text="CATEGORY MANAGEMENT">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin></Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="52.0" prefWidth="1106.0" styleClass="addCAT" stylesheets="@CatProCascadeStyleSheet.css">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="850.0" right="55.0" />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="367.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/addCAT.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin></ImageView>
+                        <Label prefHeight="39.0" prefWidth="141.0" text="Add New Category">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </HBox>
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
